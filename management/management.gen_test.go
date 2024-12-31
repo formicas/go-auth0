@@ -12116,6 +12116,16 @@ func TestSalesforceClientAddon_GetEntityID(tt *testing.T) {
 	s.GetEntityID()
 }
 
+func TestSalesforceClientAddon_GetSalesforceDomain(tt *testing.T) {
+	var zeroValue string
+	s := &SalesforceClientAddon{SalesforceDomain: &zeroValue}
+	s.GetSalesforceDomain()
+	s = &SalesforceClientAddon{}
+	s.GetSalesforceDomain()
+	s = nil
+	s.GetSalesforceDomain()
+}
+
 func TestSalesforceClientAddon_String(t *testing.T) {
 	var rawJSON json.RawMessage
 	v := &SalesforceClientAddon{}

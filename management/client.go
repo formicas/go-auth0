@@ -487,7 +487,8 @@ type RMSClientAddon struct {
 
 // SalesforceClientAddon defines the `salesforce` settings for a client.
 type SalesforceClientAddon struct {
-	EntityID *string `json:"entity_id,omitempty"`
+	EntityID         *string `json:"entity_id,omitempty"`
+	SalesforceDomain *string `json:"salesforce_domain,omitempty"`
 }
 
 // SalesforceAPIClientAddon defines the `salesforce_api` settings for a client.

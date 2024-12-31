@@ -9645,6 +9645,14 @@ func (s *SalesforceClientAddon) GetEntityID() string {
 	return *s.EntityID
 }
 
+// GetSalesforceDomain returns the SalesforceDomain field if it's non-nil, zero value otherwise.
+func (s *SalesforceClientAddon) GetSalesforceDomain() string {
+	if s == nil || s.SalesforceDomain == nil {
+		return ""
+	}
+	return *s.SalesforceDomain
+}
+
 // String returns a string representation of SalesforceClientAddon.
 func (s *SalesforceClientAddon) String() string {
 	return Stringify(s)
